@@ -3,6 +3,7 @@
 import BackgroundImage from "@/components/BackgroundImage"
 import Header from "@/components/Header"
 import SlideInfo from "@/components/SlideInfo"
+import Slides from "@/components/Slides"
 import { sliderData } from "@/lib/data"
 import { AnimatePresence } from "framer-motion"
 import { useState } from "react"
@@ -33,7 +34,9 @@ export default function Home() {
             <div className="col-span-4 mb-3 flex h-full flex-1 flex-col justify-end px-5 md:mb-0 md:justify-center md:px-10">
               <SlideInfo transitionData={transitionData} currentSlideData={currentSlideData} />
             </div>
-            <div className="col-span-6 flex h-full flex-1 flex-col justify-start p-4 md:justify-center md:p-10"></div>
+            <div className="col-span-6 flex h-full flex-1 flex-col justify-start p-4 md:justify-center md:p-10">
+              <Slides data={data} />
+            </div>
           </div>
         </div>
       </AnimatePresence>
