@@ -9,7 +9,7 @@ const BackgroundImage = ({ transitionData, currentSlideData } : Props) => {
     {/* Background Slider Transition Image */}
       {transitionData && (
          <motion.img
-         key={transitionData.id}
+         key={transitionData.img}
          layoutId={transitionData.img}
          alt="Transition Image"
          transition={{

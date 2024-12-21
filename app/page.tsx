@@ -1,6 +1,7 @@
 "use client"
 
 import BackgroundImage from "@/components/BackgroundImage"
+import Controls from "@/components/Controls"
 import Header from "@/components/Header"
 import SlideInfo from "@/components/SlideInfo"
 import Slides from "@/components/Slides"
@@ -36,6 +37,16 @@ export default function Home() {
             </div>
             <div className="col-span-6 flex h-full flex-1 flex-col justify-start p-4 md:justify-center md:p-10">
               <Slides data={data} />
+              <Controls 
+                transitionData={transitionData} 
+                currentSlideData={currentSlideData} 
+                data={data}
+                initData={initialData}
+                handleData={setData}
+                handleTransitionData={setTransitionData}
+                handleCurrentSlideData={setCurrentSlideData}
+                sliderData={sliderData}
+               />
             </div>
           </div>
         </div>
